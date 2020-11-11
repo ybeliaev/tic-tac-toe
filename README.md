@@ -1,4 +1,4 @@
-# Bootcamp progect
+# Bootcamp project TIC TAC TOE 
 
 This project was bootstrapped `npx create-react-app .`
 
