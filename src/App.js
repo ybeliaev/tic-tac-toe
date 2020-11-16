@@ -3,6 +3,8 @@ import React, {useState} from 'react';
 import './styles/root.scss';
 import Board from './components/Board';
 import History from './components/History';
+import StatusMessage from './components/StatusMessage';
+
 import { calculateWinner } from './helpers';
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
   const winner = calculateWinner(current.board)
   console.log("Winner: ", winner)
 
-  const message = winner ? `Winner is ${winner}` : `Next player is ${current.isXnext?"X":"O"}`
+  
 
   const handleSquareClick = (position) => {
     if (current.board[position] || winner) {
@@ -41,9 +43,9 @@ function App() {
   return (
     <div className="app">      
         <h1>Lean React</h1> 
-        <h2>{message}</h2>  
+        <StatusMessage winner={winner} current={current}/>
         <Board handleSquareClick={handleSquareClick} board={current.board}/>   
-        <History history={history} moveTo={moveTo} currentMove={currentMove}/>
+        <History history={history} moveTo={moveTo} currentMove={currentMove} />
     </div>
   );
 }
