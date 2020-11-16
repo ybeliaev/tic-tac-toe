@@ -1,6 +1,6 @@
 # Bootcamp project TIC TAC TOE :fire:
 ![image tic-tac-toe](./src/img/tictactoe.png)
-for React.js
+### React.js project
 
 This project was bootstrapped `npx create-react-app .`
 
