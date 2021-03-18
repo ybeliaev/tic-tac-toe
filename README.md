@@ -9,4 +9,4 @@
 > `cd build`
 > `surge`
 Логин, пароль, меняю имя...
-### Получаю [tictoc-react-game.surge.sh](http://tictoc-react-game.surge.sh/)
+### I get [tictoc-react-game.surge.sh](http://tictoc-react-game.surge.sh/)
